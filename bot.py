@@ -1,7 +1,8 @@
 import telebot
+import os
 from telebot.types import ReplyKeyboardMarkup, KeyboardButton
 
-TOKEN = "7975587876:AAEPJnx7pt-qeqM41ijxg6dRU_wfzgEx1a"
+TOKEN = os.getenv("BOT_TOKEN")  
 bot = telebot.TeleBot(TOKEN)
 
 markup = ReplyKeyboardMarkup(resize_keyboard=True)
